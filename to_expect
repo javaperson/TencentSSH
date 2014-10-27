@@ -1,0 +1,20 @@
+#!/usr/bin/expect
+
+set password happy!@#301
+set remhost [lindex $argv 0]
+set token [lindex $argv 1]
+set cmd [lindex $argv 2]
+spawn ssh -q -l app100718846 -p 36000 $remhost $cmd
+
+ expect {
+    "(yes/no)?" {
+        send "yes\n"
+       	expect "*assword*"
+		send "$token$password\n"
+    }
+    "*assword*" {
+        send "$token$password\n"
+    }
+ }
+
+interact
