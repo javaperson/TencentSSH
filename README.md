@@ -18,6 +18,7 @@ yum install curl curl-devel
 
 apt-get install curl
 apt-get install libcurl4-gnutls-dev
+apt-get install libxml2-dev
 ```
 ### 安装
 ``` shell
