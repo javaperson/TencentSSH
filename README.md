@@ -31,7 +31,7 @@ make install
 ``` shell
 tar -xvf CloudAPI_CMD_1.0.0.tar -C /data/api
 cd /data/api/cmd
- ./qc-install.sh --endpoint=api.yun.qq.com --secret_id=SECRET_ID --secret_key=SECRET_KEY --php_path=/usr/local/bin/php --cmd_path=/data/api/cmd
+./qc-install.sh --endpoint=api.yun.qq.com --secret_id=SECRET_ID --secret_key=SECRET_KEY --php_path=/usr/local/bin/php --cmd_path=/data/api/cmd
 endpoint=api.yun.qq.com
 ``` 
 ### /etc/profile
